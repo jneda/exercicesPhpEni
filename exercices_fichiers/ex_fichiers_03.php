@@ -12,6 +12,10 @@ $pointeurFichier = fopen($nomFichier, "a");
 
 fwrite($pointeurFichier, date("Y/m/d h:i:s") . PHP_EOL);
 
+// fermeture du fichier
+
+fclose($pointeurFichier);
+
 // démarrage de la copie des fichiers
 
 $startTime = microtime(true);
@@ -26,6 +30,9 @@ while ($nomFichier = $repertoireSource->read()) {
     copy($baseSource . $nomFichier, $baseDestination . $nomFichier);
   }
 }
+
+// on libère le pointeur vers le répertoire source
+$repertoireSource->close();
 
 // fin de la copie des fichiers
 
