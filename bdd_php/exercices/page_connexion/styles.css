@@ -1,0 +1,47 @@
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0.6rem 0 0.8rem;
+}
+
+p {
+  margin: 06.rem 0;
+  text-align: center;
+}
+
+p.error-message {
+  color: red;
+}
+
+form {
+  width: 90%;
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 0.4rem;
+}
+
+form .form-container .form-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6rem 0;
+}
+
+form .form-container .form-input input {
+  width: 60%;
+}
+
+form .form-container .form-input input[type="submit"] {
+  max-width: max-content;
+  font: inherit;
+  margin-top: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
