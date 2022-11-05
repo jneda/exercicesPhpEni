@@ -20,7 +20,8 @@ class Camion extends QuatreRoues
 
   // fonctions de classe
 
-  public function ajouterRemorque($longueurRemorque)
+  public function ajouterRemorque(int $longueurRemorque)
   {
+    $this->longueur += $longueurRemorque;
   }
 }

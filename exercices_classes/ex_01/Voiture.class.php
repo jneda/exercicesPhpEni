@@ -20,11 +20,13 @@ class Voiture extends QuatreRoues
 
   // fonctions de classe
 
-  public function ajouterPneusNeige($nombrePneus)
+  public function ajouterPneusNeige(int $nombrePneus)
   {
+    $this->nombrePneusNeige += $nombrePneus;
   }
 
-  public function enleverPneusNeige($nombrePneus)
+  public function enleverPneusNeige(int $nombrePneus)
   {
+    $this->nombrePneusNeige = max([0, $this->nombrePneusNeige - $nombrePneus]);
   }
 }

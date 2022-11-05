@@ -22,5 +22,6 @@ class QuatreRoues extends Vehicule
 
   public function repeindre(string $couleur)
   {
+    $this->setCouleur($couleur);
   }
 }

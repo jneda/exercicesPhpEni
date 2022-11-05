@@ -22,5 +22,7 @@ class DeuxRoues extends Vehicule
 
   public function mettreEssence($nombreLitres)
   {
+    // 1 l d'essence pèse 1 kg
+    $this->setPoids($this->getPoids() + $nombreLitres);
   }
 }
